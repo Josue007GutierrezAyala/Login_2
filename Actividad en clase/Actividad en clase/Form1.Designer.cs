@@ -33,13 +33,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Usuario = new System.Windows.Forms.TextBox();
             this.contraseña = new System.Windows.Forms.TextBox();
+            this.BtnEntrar = new System.Windows.Forms.Button();
+            this.Btnsalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(320, 11);
+            this.label1.Location = new System.Drawing.Point(232, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 24);
             this.label1.TabIndex = 0;
@@ -79,19 +81,42 @@
             this.contraseña.Name = "contraseña";
             this.contraseña.Size = new System.Drawing.Size(206, 20);
             this.contraseña.TabIndex = 4;
+            this.contraseña.TextChanged += new System.EventHandler(this.Contraseña_TextChanged);
+            // 
+            // BtnEntrar
+            // 
+            this.BtnEntrar.Location = new System.Drawing.Point(188, 168);
+            this.BtnEntrar.Name = "BtnEntrar";
+            this.BtnEntrar.Size = new System.Drawing.Size(74, 36);
+            this.BtnEntrar.TabIndex = 5;
+            this.BtnEntrar.Text = "Iniciar";
+            this.BtnEntrar.UseVisualStyleBackColor = true;
+            this.BtnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
+            // 
+            // Btnsalir
+            // 
+            this.Btnsalir.Location = new System.Drawing.Point(402, 168);
+            this.Btnsalir.Name = "Btnsalir";
+            this.Btnsalir.Size = new System.Drawing.Size(83, 36);
+            this.Btnsalir.TabIndex = 6;
+            this.Btnsalir.Text = "Salir";
+            this.Btnsalir.UseVisualStyleBackColor = true;
+            this.Btnsalir.Click += new System.EventHandler(this.Btnsalir_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(591, 247);
+            this.Controls.Add(this.Btnsalir);
+            this.Controls.Add(this.BtnEntrar);
             this.Controls.Add(this.contraseña);
             this.Controls.Add(this.Usuario);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "uench";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,6 +129,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Usuario;
         private System.Windows.Forms.TextBox contraseña;
+        private System.Windows.Forms.Button BtnEntrar;
+        private System.Windows.Forms.Button Btnsalir;
     }
 }
 
